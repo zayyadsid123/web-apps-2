@@ -6,6 +6,15 @@ Rails.application.routes.draw do
 
   resources "companies"
   # get("/companies", {:controller => "companies", :action => "index"})
+  # get{"/companies/new",  {:controller => "companies", :action => "new"}}}
+
+  # get{"/companies/:id", {:controller => "companies", :action => "show"}}
+  # post{"/companies", {:controller => "companies", :action => "create"}}
+  # get{"/companies/create", {:controller => "companies", :action => "create"}}
+  # get{"/companies/:id/edit", {:controller => "companies", :action => "edit"}}
+  #patch("/companies/id",{:controller => "companies","action=>"update"})
+    #delete("/companies/id",{:controller => "companies","action=>"destroy"})
+
   resources "contacts"
   # get("/contacts", {:controller => "contacts", :action => "index"})
 
